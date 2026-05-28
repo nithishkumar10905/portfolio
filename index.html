@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Nithishkumar S — ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#hero" class="nav-logo">Nithish</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <ul>
+    <li><a href="#about" onclick="closeMobileNav()">About</a></li>
+    <li><a href="#skills" onclick="closeMobileNav()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMobileNav()">Projects</a></li>
+    <li><a href="#certifications" onclick="closeMobileNav()">Certs</a></li>
+    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-chip">Available for opportunities</div>
+    <h1 class="hero-name">
+      Hi, I'm <span>Nithishkumar S</span>
+    </h1>
+    <p class="hero-desc">
+      ML Engineer & Software Developer building end-to-end intelligent systems —
+      from raw data to deployed products. Based in Tiruppur, Tamil Nadu.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-blue">View Projects</a>
+      <a href="mailto:sekarnithish35@gmail.com" class="btn-outline">Hire Me</a>
+    </div>
+    <div class="hero-tags">
+      <span>Python</span><span>Scikit-learn</span><span>Flask</span>
+      <span>React.js</span><span>AWS</span><span>Streamlit</span><span>Java</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section dark" id="about">
+  <div class="wrap">
+    <div class="sec-eyebrow">01 — ABOUT</div>
+    <h2 class="sec-title">Who I <em>am</em></h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a B.Tech graduate in Artificial Intelligence & Data Science from Sri Krishna College of Technology, Coimbatore. I specialise in building ML pipelines end-to-end — cleaning messy data, training and tuning models, then shipping them as usable web apps.</p>
+        <p>I've built a healthcare AI triage system, a college placement predictor, an NLP-based ATS resume scorer, and a Java search engine. I also did a Data Analytics internship at Accent Info Technologies.</p>
+        <p>I'm currently looking for entry-level ML Engineer or SDE roles where I can contribute to real-world products from day one.</p>
+        <div class="stat-row reveal">
+          <div class="stat-box"><strong>8.11</strong><span>CGPA</span></div>
+          <div class="stat-box"><strong>4+</strong><span>PROJECTS</span></div>
+          <div class="stat-box"><strong>5</strong><span>CERTIFICATIONS</span></div>
+          <div class="stat-box"><strong>2</strong><span>INTERNSHIPS</span></div>
+        </div>
+      </div>
+      <div class="edu-block reveal">
+        <h4>EDUCATION</h4>
+        <div class="edu-item">
+          <strong>Sri Krishna College of Technology</strong>
+          <span>B.Tech — AI & Data Science · CGPA 8.11</span>
+          <p>Coimbatore, Tamil Nadu · 2023</p>
+        </div>
+        <div class="edu-item">
+          <strong>Nyruthi Vidhya Bhavan Matric Hr.Sec School</strong>
+          <span>12th — 91%</span>
+          <p>Tiruppur, Tamil Nadu · 2023</p>
+        </div>
+        <div class="edu-item">
+          <strong>M.N. Chikkanna Chettiar Mat. School</strong>
+          <span>10th — 100%</span>
+          <p>Tiruppur, Tamil Nadu · 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="sec-eyebrow">02 — SKILLS</div>
+    <h2 class="sec-title">Tech <em>Stack</em></h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">⌨️</div>
+        <h3>PROGRAMMING</h3>
+        <div class="tags"><span>Python</span><span>Java</span><span>SQL</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">🤖</div>
+        <h3>ML & DATA SCIENCE</h3>
+        <div class="tags">
+          <span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+          <span>Random Forest</span><span>TF-IDF</span><span>Feature Engineering</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">🌐</div>
+        <h3>WEB & DEPLOYMENT</h3>
+        <div class="tags"><span>Flask</span><span>Streamlit</span><span>React.js</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">☁️</div>
+        <h3>CLOUD & TOOLS</h3>
+        <div class="tags"><span>AWS EC2</span><span>AWS S3</span><span>Git</span><span>VS Code</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">🧠</div>
+        <h3>CORE CS</h3>
+        <div class="tags"><span>Data Structures</span><span>OOP</span><span>Algorithms</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card-icon">💬</div>
+        <h3>SOFT SKILLS</h3>
+        <div class="tags"><span>Analytical Thinking</span><span>Collaboration</span><span>Communication</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section dark" id="projects">
+  <div class="wrap">
+    <div class="sec-eyebrow">03 — PROJECTS</div>
+    <h2 class="sec-title">What I've <em>Built</em></h2>
+    <div class="projects-grid">
+
+      <div class="proj featured reveal">
+        <div class="proj-visual">
+          <div class="big">AI</div>
+          Healthcare Triage System
+        </div>
+        <div class="proj-content">
+          <div class="proj-header">
+            <span class="proj-num">01</span>
+            <span class="proj-badge done">Completed</span>
+          </div>
+          <h3>Dr. Triage</h3>
+          <div class="proj-cat">AI-Powered Healthcare System</div>
+          <p>An AI web app for symptom analysis, disease prediction, and patient severity assessment. Random Forest & Decision Tree models via Scikit-learn. Flask backend, Bootstrap frontend, managed with Git & GitHub.</p>
+          <div class="proj-stack">
+            <span>Flask</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Bootstrap</span><span>GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-header">
+          <span class="proj-num">02</span>
+          <span class="proj-badge done">Completed</span>
+        </div>
+        <h3>Resume ATS Scorer</h3>
+        <div class="proj-cat">NLP · Resume Matching</div>
+        <p>Evaluates resume relevance against job descriptions using TF-IDF vectorization and cosine similarity. Flags missing keywords and generates ATS-style match scores.</p>
+        <div class="proj-stack">
+          <span>Python</span><span>TF-IDF</span><span>NLP</span><span>Cosine Similarity</span>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-header">
+          <span class="proj-num">03</span>
+          <span class="proj-badge done">Completed</span>
+        </div>
+        <h3>Placement Predictor</h3>
+        <div class="proj-cat">ML · Streamlit Dashboard</div>
+        <p>Predicts student placement chances from academic & skill data. Achieved 80% precision and recall after tuning. Ships with an interactive Streamlit dashboard for real-time use.</p>
+        <div class="proj-stack">
+          <span>Scikit-learn</span><span>Streamlit</span><span>Feature Engineering</span>
+        </div>
+      </div>
+
+      <div class="proj reveal">
+        <div class="proj-header">
+          <span class="proj-num">04</span>
+          <span class="proj-badge wip">In Progress</span>
+        </div>
+        <h3>Java Search Engine</h3>
+        <div class="proj-cat">Systems · Java</div>
+        <p>Document retrieval engine using an inverted index (HashMap). Applies tokenization, stop-word removal, and TF-IDF ranking to return the most relevant results for user queries.</p>
+        <div class="proj-stack">
+          <span>Java</span><span>Data Structures</span><span>TF-IDF</span><span>File I/O</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="wrap">
+    <div class="sec-eyebrow">04 — CERTIFICATIONS & TRAINING</div>
+    <h2 class="sec-title">Learning <em>Path</em></h2>
+    <div class="certs-cols">
+      <div>
+        <ul class="cert-list">
+          <li class="reveal"><span class="cert-dot"></span>IBM Artificial Intelligence</li>
+          <li class="reveal"><span class="cert-dot"></span>Gen AI Copilot with Bing</li>
+          <li class="reveal"><span class="cert-dot"></span>Python for Data Science</li>
+          <li class="reveal"><span class="cert-dot"></span>Machine Learning Onramp</li>
+          <li class="reveal"><span class="cert-dot"></span>React Frontend — Infosys Springboard</li>
+        </ul>
+      </div>
+      <div>
+        <div class="training-card reveal">
+          <div class="label">INTERNSHIP</div>
+          <h4>Data Analytics with Python</h4>
+          <p>Accent Info Technologies Pvt Ltd, Coimbatore</p>
+        </div>
+        <div class="training-card reveal">
+          <div class="label">WORKSHOP</div>
+          <h4>Webots Drone Simulation Program</h4>
+          <p>3D Environment Creation — SNS College, Coimbatore</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark" id="contact">
+  <div class="wrap">
+    <div class="sec-eyebrow">05 — CONTACT</div>
+    <h2 class="sec-title">Let's <em>Connect</em></h2>
+    <div class="contact-grid">
+      <a href="mailto:sekarnithish35@gmail.com" class="clink reveal">
+        <div class="clink-icon">✉️</div>
+        <div><div class="clink-label">EMAIL</div><div class="clink-val">sekarnithish35@gmail.com</div></div>
+      </a>
+      <a href="tel:9655525465" class="clink reveal">
+        <div class="clink-icon">📞</div>
+        <div><div class="clink-label">PHONE</div><div class="clink-val">+91 96555 25465</div></div>
+      </a>
+      <a href="https://linkedin.com/in/nithish-kumar-3823ab290" target="_blank" class="clink reveal">
+        <div class="clink-icon">💼</div>
+        <div><div class="clink-label">LINKEDIN</div><div class="clink-val">nithish-kumar-3823ab290</div></div>
+      </a>
+      <a href="https://github.com/nithishkumar10905" target="_blank" class="clink reveal">
+        <div class="clink-icon">🐙</div>
+        <div><div class="clink-label">GITHUB</div><div class="clink-val">github.com/nithishkumar10905</div></div>
+      </a>
+      <div class="clink reveal">
+        <div class="clink-icon">📍</div>
+        <div><div class="clink-label">LOCATION</div><div class="clink-val">Tiruppur, Tamil Nadu 641604</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>© 2025 Nithishkumar S</span>
+  <span>Built with HTML · CSS · Three.js</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="main.js"></script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('active');
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    hamburger.classList.remove('active');
+  }
+
+  // Theme toggle
+  const themeBtn = document.getElementById('themeBtn');
+  const root = document.documentElement;
+  let dark = true;
+  themeBtn.addEventListener('click', () => {
+    dark = !dark;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    themeBtn.textContent = dark ? '🌙' : '☀️';
+    if (window.onThemeChange) window.onThemeChange(!dark);
+  });
+</script>
+</body>
+</html>
